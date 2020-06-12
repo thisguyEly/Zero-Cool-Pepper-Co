@@ -1,6 +1,9 @@
 header {
-    display: block;
+    display: inline-flex;
+    justify-content: center;
     align-content: center;
+    border: slategray;
+    border-color: slategray;
 }
 
 h1 {
@@ -8,12 +11,18 @@ h1 {
     font-stretch: expanded;
 }
 
+h2 {
+    display: inline-block;
+
+}
+
 p {
     text-align: center;
 }
 
 .icons-container {
-    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
     font-style: normal;
 }
 
@@ -39,4 +48,10 @@ img {
 .lil-nav {
     overflow-y: scroll;
     overflow-x: hidden;
+}
+
+address {
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
 }

@@ -10201,8 +10201,8 @@
     *,
     *::before,
     *::after {
-      text-shadow: none !important;
-      box-shadow: none !important;
+      text-shadow: slategray !important;
+      box-shadow: slategray !important;
     }
     a:not(.btn) {
       text-decoration: underline;
