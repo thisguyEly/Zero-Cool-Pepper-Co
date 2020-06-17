@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta content="IE=Edge" http-equiv="X-UA-Compatible">
-	<meta content="width-device-width, initial-scale=1" name="viewport">
-	<script src="ZeroCoolPepperCo.js">
-	</script>
+	<meta charset="UTF-8" />
+	<meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+	<meta content="width-device-width, initial-scale=1" name="viewport" />
+	<script src="ZeroCoolPepperCo.js"></script>
 	<title>Zero Cool Pepper Company</title>
-	<link href="./pepperStyles.css" rel="stylesheet">
-	<link href="./bootstrap.css" rel="stylesheet">
+	<link href="./pepperStyles.css" rel="stylesheet" />
+	<link href="./bootstrap.css" rel="stylesheet" />
 </head>
+
 <body>
 	<header>
 		<div class="top-nav">
-			<a class="home" href="#home">Home</a> <a class="About" href="#about">About</a> <a class="peppers" href="#peppers">Peppers</a> <a class="salsas" href="#salsas">Salsas</a> <a class="jellies" href="#jellies">Jellies</a> <a class="hot sauces" href="#hotsauces">Hot Sauces</a> <a class="Contact" href="#contact">Contact</a> <input placeholder="Search.." type="text">
-		</div><!--
+			<a class="home" href="#home">Home</a>
+			<a class="About" href="#about">About</a>
+			<a class="peppers" href="#peppers">Peppers</a>
+			<a class="salsas" href="#salsas">Salsas</a>
+			<a class="jellies" href="#jellies">Jellies</a>
+			<a class="hot sauces" href="#hotsauces">Hot Sauces</a>
+			<a class="Contact" href="#contact">Contact</a>
+			<input placeholder="Search.." type="text" />
+		</div>
+		<!--
     <section>
       <h1><span style="color: purple;">Zero Cool Pepper Company</span></h1>
       <p><span style="color: lightseagreen;">Website by Ely Sanneman</span></p>
@@ -29,43 +38,103 @@
     </section>
   -->
 	</header>
-	<area>
+	<area />
+
 	<!--Image Carousel-->
 	<div class="wrapper">
 		<nav class="lil-nav">
-			<a href="#image1"><img alt="Seeds Start" class="lil-nav_img" src="./Images/all%20plant%20start.jpg"></a> <a href="#image2"><img alt="tiger jalapeno" class="lil-nav_img" src="./Images/tiger%20jalepeno%20start.jpg"></a> <a href="#image3"><img alt="aji lemon drop" class="lil-nav_img" src="./Images/aji%20lemon%20drop%20full.jpg"></a> <a href="#image4"><img alt="sugar rush peach" class="lil-nav_img" src="./Images/sugar%20rush%20peach%20full.jpg"></a>
+			<a href="#image1"><img alt="Seeds Start" class="lil-nav_img" src="./Images/all%20plant%20start.jpg" /></a>
+			<a href="#image2"><img alt="tiger jalapeno" class="lil-nav_img"
+					src="./Images/tiger%20jalepeno%20start.jpg" /></a>
+			<a href="#image3"><img alt="aji lemon drop" class="lil-nav_img"
+					src="./Images/aji%20lemon%20drop%20full.jpg" /></a>
+			<a href="#image4"><img alt="sugar rush peach" class="lil-nav_img"
+					src="./Images/sugar%20rush%20peach%20full.jpg" /></a>
 		</nav>
-		<div class="gallery"><img alt="Seeds Start" class="gallery_img" id="image1" src="./Images/all%20plant%20start.jpg"> <img alt="tiger jalapeno" class="gallary_img" id="image2" src="./Images/tiger%20jalepeno%20start.jpg"> <img alt="aji lemon drop" class="gallery_img" id="image3" src="./Images/aji%20lemon%20drop%20full.jpg"> <img alt="sugar rush peach" class="gallery_img" id="image4" src="./Images/sugar%20rush%20peach%20full.jpg"></div>
-	</div><!--Home Section-->
+		<div class="gallery">
+			<img alt="Seeds Start" class="gallery_img" id="image1" src="./Images/all%20plant%20start.jpg" />
+			<img alt="tiger jalapeno" class="gallary_img" id="image2" src="./Images/tiger%20jalepeno%20start.jpg" />
+			<img alt="aji lemon drop" class="gallery_img" id="image3" src="./Images/aji%20lemon%20drop%20full.jpg" />
+			<img alt="sugar rush peach" class="gallery_img" id="image4"
+				src="./Images/sugar%20rush%20peach%20full.jpg" />
+		</div>
+	</div>
+
+	<!--Home Section-->
 	<article class="home-section">
 		<h2>About</h2>
-		<p>Hello, My name is Ely and i've enjoyed peppers/spicy food for as long as I can remember.</p>
-	</article><!--Pepper Section-->
+		<p>
+			Hello, My name is Ely and i've enjoyed peppers/spicy food for as long as
+			I can remember.
+		</p>
+	</article>
+
+	<!--Pepper Section-->
 	<section>
+		<fieldset>
 		<h2>Peppers</h2>
-		<h3>Aji Lemon Drop</h3>
-		<p></p>
-		<h3>Sugar Rush Peach</h3>
-		<h3>Thai Dragon</h3>
-		<h3>Serrano</h3>
-	</section><!--Salsas Section-->
+		<select id="peppers_types" name="pepper_types">
+			<option value="Aji Lemon Drop">Aji Lemon Drop</option>
+			<option value="Sugar Rush Peach">Sugar Rush Peach</option>
+			<option value="Thai Dragon">Thai Dragon</option>
+			<option value="Serrano">Serrano</option>
+		</select>
+	</fieldset>
+	</section>
+
+	<!--Salsas Section-->
 	<section>
 		<h2>Salsas</h2>
 		<p></p>
-	</section><!--Jellies Section-->
+	</section>
+
+	<!--Jellies Section-->
 	<section>
 		<h2>Jellies</h2>
 		<p></p>
-	</section><!--Hot Sauce Section-->
+	</section>
+
+	<!--Hot Sauce Section-->
 	<section>
 		<h2>Hot Sauces</h2>
 		<p></p>
-	</section><!--Contact Section-->
+	</section>
+
+	<!--Contact Section-->
 	<section>
 		<h2>Contact</h2>
 		<address>
-			<strong>Phone:</strong> <a>502-836-4594</a> <strong>Email:</strong> <a href="mailto:thisguyely@gmail.com">thisguyely@gmail.com</a>
+			<strong>Phone:</strong> <a>502-836-4594</a> <strong>Email:</strong>
+			<a href="mailto:thisguyely@gmail.com">thisguyely@gmail.com</a>
 		</address>
+		<!--Contact message form-->
+		<form action="pepperIndex.html" class="form" method="POST"></form>
+		<h1>Submit a question or comment</h1>
+		<fieldset>
+			<legend>Contact</legend> 
+			<label for="name">Name:</label>
+			<input id="name" name="user_name" type="text">
+		</fieldset>
+
+		<fieldset>
+			<legend>Email</legend>
+			<label for="email">Email:</label>
+			<input id="email" name="user_email" type="email">
+		</fieldset>
+
+		<fieldset>
+			<legend>Message</legend>
+			<label for="message">Message</label>
+			<textarea id="message" name="user_message"></textarea>
+		</fieldset>
+		<button type="submit">Submit</button>
+	</form>
 	</section>
+	<footer>
+	<div class="copyright">
+		&copy;Copyright 2020. All rights Reserved.
+	</div>
+</footer>
 </body>
+
 </html>
