@@ -23,10 +23,10 @@
 				<li> <a href="#" <i class="fas fa-home"></i>Home</a><li>
 					<li> <a href="#about" <i class="fas fa-info-circle"></i>About</a><li>
 						<li><a href="#peppers" <i class="fas fa-pepper-hot"></i>Peppers</a><li>
-							<li><a class="scroll-trigger" href="#">Salsas</a><li>
-								<li><a class="scroll-trigger" href="#">Jellies</a><li>
+							<li><a href="#" <i class="fab fa-hotjar"></i>Salsas</a><li>
+								<li><a <i class="fas fa-utensil-spoon"></i>Jellies</a><li>
 									<li><a href="#" <i class="fas fa-wine-bottle"></i>Hot Sauces</a><li>
-										<li><a class="scroll-trigger" href="#">Contact</a><li>
+										<li><a href="#" href="#" <i class="far fa-address-book"></i>Contact</a><li>
 		</div>
 		</ul>
 
@@ -35,16 +35,6 @@
 		</div>
 	<!--
     <section>
-      <h1><span style="color: purple;">Zero Cool Pepper Company</span></h1>
-      <p><span style="color: lightseagreen;">Website by Ely Sanneman</span></p>
-      <ul class="icons-container">
-        <li id="about-item"><a href="#about">About</a></li>
-        <li id="peppers-item"><a href="#peppers">Peppers</a></li>
-        <li id="salsas-item"><a href="#salsas">Salsas</a></li>
-        <li id="jellies-item"><a href="#jellies">Jellies</a></li>
-        <li id="hot-sauces-item"><a href="#hot_sauces">Hot Sauces</a></li>
-        <li id="contacxt-item"><a href="#contact">Contact</a></li>
-      </ul>
     </section>-->
   
 	<area />
@@ -53,24 +43,71 @@
 
 	</div>
 	<!--Image Carousel-->
-	<!-- <div class="wrapper">
-		<nav class="lil-nav">
-			<a href="#image1"><img alt="Seeds Start" class="lil-nav_img" 
-					src="./Images/all%20plant%20start.jpg" /></a>
-			<a href="#image2"><img alt="tiger jalapeno" class="lil-nav_img"
-					src="./Images/tiger%20jalepeno%20start.jpg" /></a>
-			<a href="#image3"><img alt="aji lemon drop" class="lil-nav_img"
-					src="./Images/aji%20lemon%20drop%20full.jpg" /></a>
-			<a href="#image4"><img alt="sugar rush peach" class="lil-nav_img"
-					src="./Images/sugar%20rush%20peach%20full.jpg" /></a>
-		</nav>
-		<div class="gallery">
-			<img alt="Seeds Start" class="gallery_img" id="image1" src="./Images/all%20plant%20start.jpg" />
-			<img alt="tiger jalapeno" class="gallary_img" id="image2" src="./Images/tiger%20jalepeno%20start.jpg" />
-			<img alt="aji lemon drop" class="gallery_img" id="image3" src="./Images/aji%20lemon%20drop%20full.jpg" />
-			<img alt="sugar rush peach" class="gallery_img" id="image4"	src="./Images/sugar%20rush%20peach%20full.jpg" />
+	<div class="container">
+
+	<!--full width images with number text-->
+	<div class="mySlides">
+		<div class="numbertext">1/6</div>
+		<img src="./Images/sugar rush peach full.jpg" style="width: 100%;">
 		</div>
-	</div> -->
+
+	<div class="mySlides">
+		<div class="numbertext2">2/6</div>
+		<img src="./Images/srp2.jpg" style="width: 100%;">
+	</div>
+
+	<div class="mySlides">
+		<div class="numbertext3">3/6</div>
+		<img src="./Images/srp3.webp" style="width: 100%;">
+	</div>
+
+	<div class="mySlides">
+		<div class="numbertext4">4/6</div>
+		<img src="./Images/srp4.jpg" style="width: 100%;">
+	</div>
+
+	<div class="mySlides">
+		<div class="numbertext5">5/6</div>
+		<img src="./Images/srp5.jpg" style="width: 100%;">
+	</div>
+
+	<div class="mySlides">
+		<div class="numbertext6">6/6</div>
+		<img src="./Images/sugar-rush-peach-last.jpg" style="width: 100%;">
+	</div>
+
+	<!--Next and previous buttons-->
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+	<!--Image Text-->
+	<div class="captionContainer">
+		<p id="caption"></p>
+	</div>
+
+	<!--Thumbnail Images-->
+	<div class="row">
+		<div class="column">
+			<img class="demo cursor" src="./Images/all plant start.jpg" style="width: 100%;" onclick="currentSlide(1)" alt="Seedlings">
+		</div>
+		<div class="column">
+			<img class="demo cursor" src="./Images/srp2.jpg" style="width: 100%;" onclick="currentSlide(2)" alt="Sprouts">
+		</div>
+		<div class="column">
+			<img class="demo cursor" src="./Images/srp3.webp" style="width: 100%;" onclick="currentSlide(3)" alt="Inside Pod">
+		</div>
+		<div class="column">
+			<img class="demo cursor" src="./Images/srp4.jpg" style="width: 100%;" onclick="currentSlide(4)" alt="Full Length">
+		</div>
+		<div class="column">
+			<img class="demo cursor" src="./Images/srp5.jpg" style="width: 100%;" onclick="currentSlide(5)" alt="SRP Shapes">
+		</div>
+		<div class="column">
+			<img class="demo cursor" src="./Images/sugar-rush-peach-last.jpg" style="width: 100%;" onclick="currentSlide(6)" alt="Final Product">
+		</div>
+	</div>
+	</div>
+
 
 	<!--Home Section-->
 <section>
