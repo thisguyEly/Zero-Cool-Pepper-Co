@@ -1,23 +1,19 @@
 /****************************/
-/**** Imports ********/
-/****************************/
-/*@import url(https://fonts.google.com/specimen/Noto + Sans?sidebar.open&selection.family=Noto + Sans);
-
-/****************************/
 /*** Side nav menu Styles ***/
 /****************************/
 .side-nav {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
+  float: left;
   height: 100%;
   width: 175px;
   margin: 0;
   top: 0;
   left: 0;
-  background-color: #4c0080; /*Dark Purple */
+  background-color: #4c0080; /*Dark Purple 004d1a*/
   overflow-x: hidden;
   z-index: -999;
-  padding-top: 5px;
+  padding-top: 25px;
 }
 
 .side-nav a {
@@ -34,7 +30,7 @@
 
 /* on hover over links */
 .side-nav a:hover {
-  color: #7c1010;
+  color: #2cc09b;
   animation: shake 0.5s;
   animation-iteration-count: initial;
 }
@@ -53,21 +49,138 @@
   flex-basis: auto;
   justify-content: center;
   color: #4c0080;
-  font-size: 28px;
+  font-size: 35px;
   background-color: black;
 }
 
-.banner {
+.about {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  flex-flow: row wrap;
+  border: solid;
+  border-color: #4c0080;
+  text-indent: initial;
+  font-size: 1.2em;
+  padding: 20px 35px 55px 90px;
+  border-radius: 15px 50px 30px 5px;
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+  font-size: 3em;
+  text-align: center;
+  color: #4c0080;
+  padding-left: 45%;
+}
+
+#peppers {
+  display: flex;
+  justify-content: center;
+  font-size: 3em;
+  text-align: center;
+  color: #4c0080;
+  padding-left: 10%;
+}
+
+.salsas {
+  display: flex;
+  flex-flow: row wrap;
+  border: solid;
+  border-color: #4c0080;
+  text-indent: initial;
+  font-size: 1.2em;
+  padding: 20px 35px 55px 90px;
+  border-radius: 15px 50px 30px 5px;
+}
+
+#salsas {
+  display: flex;
+  justify-content: center;
+  font-size: 3em;
+  text-align: center;
+  color: #4c0080;
+  padding-left: 40%;
+}
+
+.jellies {
+  display: flex;
+  flex-flow: row wrap;
+  border: solid;
+  border-color: #4c0080;
+  text-indent: initial;
+  font-size: 1.2em;
+  padding: 20px 35px 55px 90px;
+  border-radius: 15px 50px 30px 5px;
+}
+
+#jellies {
+  display: flex;
+  justify-content: center;
+  font-size: 3em;
+  text-align: center;
+  color: #4c0080;
+  padding-left: 40%;
+}
+
+.hotsauces {
+  display: flex;
+  flex-flow: row wrap;
+  border: solid;
+  border-color: #4c0080;
+  text-indent: initial;
+  font-size: 1.2em;
+  padding: 20px 35px 55px 90px;
+  border-radius: 15px 50px 30px 5px;
+}
+
+#hotsauces {
+  display: flex;
+  justify-content: center;
+  font-size: 3em;
+  text-align: center;
+  color: #4c0080;
+  padding-left: 40%;
+}
+
+/****************************/
+/**** Flex Box **************/
+/****************************/
+.flex-container-banner {
+  display: flexbox;
+}
+
+.flex-container-peppers {
+  display: flex;
+  flex-basis: content;
+  flex-flow: column wrap;
+  align-self: center;
+  border: solid;
+  border-color: #4c0080;
+  text-indent: initial;
+  font-size: 1.2em;
+  padding: 20px 35px 55px 90px;
+  border-radius: 15px 50px 30px 5px;
+}
+
+.flex-container-contact {
+  display: flex;
+  flex-basis: content;
+  flex-flow: column wrap;
+  align-self: center;
+}
+
+.hotsauces {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.banner {
   content: "";
   top: 0;
-  height: 72vh;
+  height: 45vh;
   left: 0;
   right: 0;
-  z-index: -1;
-  background: url(../Images/banner.jpg);
 }
 
 body:before {
@@ -99,10 +212,6 @@ h1 {
   font-stretch: expanded;
 }
 
-h2 {
-  display: flex;
-  justify-content: center;
-}
 
 p {
   display: flex;
@@ -112,7 +221,7 @@ p {
 
 img {
   display: inline-flex;
-  max-width: 25%;
+  max-width: 40%;
 }
 
 /*
@@ -165,11 +274,6 @@ address {
   text-align: center;
 }
 
-.flex-container {
-  display: inline-flexbox;
-  flex-flow: row nowrap;
-  align-items: baseline;
-}
 
 input[type="button"],
 input[type="reset"],
@@ -225,14 +329,13 @@ li {
   position: absolute;
   top: 40%;
   width: auto;
-  padding: 16px;
+  padding: 10px;
   margin-top: -50px;
-  color: white;
+  color: #4c0080;
   font-weight: bold;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
   user-select: none;
-  -webkit-user-select: none;
 }
 
 /* Position next button to the right */
@@ -260,8 +363,7 @@ li {
 .caption-container {
   text-align: center;
   background-color: #222;
-  padding: 2px 16px;
-  color: white;
+  padding: 2px 12px;
 }
 
 .row:after {
@@ -284,6 +386,19 @@ li {
 .active,
 .demo:hover {
   opacity: 1;
+}
+
+/****************************/
+/**** pseudo selectors ******/
+/****************************/
+
+input:focus,
+textarea:focus {
+  border-color: rgb(99, 8, 99);
+}
+
+:disabled {
+  background: darkgray;
 }
 
 /****************************/
