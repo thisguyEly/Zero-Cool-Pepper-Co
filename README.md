@@ -1,21 +1,25 @@
 # Zero-Cool-Pepper-Co
-Hello, the purpose of this README.md file is to document the requirements met for Code Louisville's front-end development capstone project as coded by me. The next section shows the featured requirements chosen from the syllabus in this capstone site project.
+Hello, the purpose of this README.md file is to document the requirements met for Code Louisville's front-end development capstone project as coded by me. I have written a website that shows my interest in both growing & cooking with hot peppers. 
+
+The next section shows the featured requirements chosen from the syllabus in this capstone site project.
 ---------------------------------------------------------------------------------------------------
 Feature Requirements:
 Choose a minimum of 3 of the below features and incorporate into your site
 •	Use flexbox to rearrange 2 or more content areas on your page as the screen changes sizes
+- multiple  areas using flexbox
  
 •	Use media queries to switch from a one-column mobile layout to a two or more column desktop layout
-
+- media queries added to handle both mobile & tablet layouts.
 
 
 •	Create a form that takes in at least two fields of information and validates input (for example, it checks to ensure email is the a@b.com forma
 
 •	Create a JavaScript function whose return value is used in your site. The function must be triggered by user action (ex: clicking a button).
-
+ - I have a contact form which calls a javascript function verifying the form cannot be submitted unless a name is provided.
 
 
 •	Create an image carousel with at least 3 images that it rotates through
+ - i have added an image carousel under the Peppers section just beneath "Sugar Rush Peach" peppers.
 
 -------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------
