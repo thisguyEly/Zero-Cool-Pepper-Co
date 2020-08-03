@@ -16,15 +16,15 @@ function myFunction() {
 }
 
 //close hamburger menu after click
-$('#myLinks').click(function() {
-  $(this).toggleClass('#myLinks');
-  $('#myLinks').toggleClass('open');
- });
+var button = document.getElementById('myLinks'),
+    div = button.getElementsByTagName('div')[0];
 
-// Close after clicking on a link
-$('.top-nav a').on('click', function(){
-   $("#myLinks").hide();
-   $("#button-toggle").removeClass("active");
+button.onclick = function() {
+  div.classList.toggle('myLinks');
+}
+
+$('myLinks a').on("click", function() {
+  $('.top-nav').click();
 });
 
 

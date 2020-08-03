@@ -78,6 +78,7 @@ body {
   color: #4c0080;
   font-size: 35px;
   background-color: black;
+  text-shadow: 2px 2px turquoise;
 }
 
 .about {
@@ -109,7 +110,6 @@ body {
   font-size: 3em;
   text-decoration: underline;
   color: #4c0080;
-  padding-left: 10%;
 }
 
 .salsas {
@@ -511,4 +511,17 @@ textarea:focus {
     width: 100vw;
     text-align: center;
   }
+}
+
+/****************************/
+/******** Clearfix **********/
+/****************************/
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
 }
