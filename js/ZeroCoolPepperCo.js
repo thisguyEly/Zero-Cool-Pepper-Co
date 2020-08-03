@@ -16,17 +16,17 @@ function myFunction() {
 }
 
 //close hamburger menu after click
-/*$(document).ready(function(){
-  $(".active").click(function(){
-    $(this).find("#myLinks").slideToggle("fast");
-  });
+$('#myLinks').click(function() {
+  $(this).toggleClass('#myLinks');
+  $('#myLinks').toggleClass('open');
+ });
+
+// Close after clicking on a link
+$('.top-nav a').on('click', function(){
+   $("#myLinks").hide();
+   $("#button-toggle").removeClass("active");
 });
-$(document).on("click", function(event){
-  var $trigger = $(".active");
-  if($trigger !== event.target && !$trigger.has(event.target).length) {
-    $("#myLinks").slideUp("fast");
-  }
-})*/
+
 
 /**
  * Image Carousel
@@ -34,12 +34,12 @@ $(document).on("click", function(event){
 var slideIndex = 1;
 showSlides(slideIndex);
 
-//Next/Previous Button Controls 
+// Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-//Thumbnail Image Controls
+// Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
@@ -49,14 +49,10 @@ function showSlides(n) {
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("demo");
   var captionText = document.getElementById("caption");
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-    slides[1].style.display = "none";
+    slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
@@ -64,7 +60,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
-}
+} 
 
 // Peppers menu button
 var btn = document.getElementsByClassName(myLinks);
@@ -81,7 +77,7 @@ function validateForm() {
 //Back to the top button
 mybutton = document.getElementById("backToTheTopBtn");
 
-//window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -94,5 +90,14 @@ function scrollFunction() {
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox & IE
 } 
+
+/*
+// scroll trigger 
+const trigger = new scrollTrigger({
+  trigger: {
+    once: true
+  }
+})
+*/
