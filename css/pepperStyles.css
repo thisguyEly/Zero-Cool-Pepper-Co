@@ -75,6 +75,7 @@ body {
   flex-basis: auto;
   flex-flow: column wrap;
   justify-content: center;
+  align-items: center;
   color: #4c0080;
   font-size: 35px;
   background-color: black;
@@ -100,7 +101,6 @@ body {
   text-align: center;
   text-decoration: underline;
   color: #4c0080;
-  padding-left: 45%;
 }
 
 #peppers {
@@ -131,7 +131,6 @@ body {
   text-align: center;
   text-decoration: underline;
   color: #4c0080;
-  padding-left: 40%;
 }
 
 .jellies {
@@ -152,7 +151,6 @@ body {
   text-align: center;
   text-decoration: underline;
   color: #4c0080;
-  padding-left: 40%;
 }
 
 .hotsauces {
@@ -171,7 +169,6 @@ body {
   text-align: center;
   color: #4c0080;
   text-decoration: underline;
-  padding-left: 40%;
 }
 
 #backToTheTopBtn {
@@ -298,7 +295,7 @@ footer {
 
 .footer .copyright {
   box-sizing: border-box;
-  font-weight: 400;
+  font-weight: 400px;
   text-align: center;
 }
 
@@ -524,4 +521,9 @@ textarea:focus {
 
 .clearfix::after {
   clear: both;
+}
+
+#backdrop {
+  display: flex;
+  align-content: stretch;
 }
